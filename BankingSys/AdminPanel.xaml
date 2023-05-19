@@ -1,0 +1,27 @@
+﻿<Page x:Class="BankingSys.AdminPanel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BankingSys"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminPanel">
+
+    <Grid>
+        <TextBlock FontSize="30" HorizontalAlignment="Left" Height="50" Margin="57,135,0,0" TextWrapping="Wrap" Text="Manage User" VerticalAlignment="Top" Width="184"/>
+        <TextBox x:Name="User" FontSize="20" TextAlignment="Center" HorizontalAlignment="Left" Margin="32,190,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="236" Height="34" GotFocus="UserFocus"/>
+        <Button Content="Manage" Margin="74,247,576,0" Height="40" VerticalAlignment="Top" Click="ManageButton"/>
+        <Button Content="Logout" Margin="604,0,46,30" Height="40" VerticalAlignment="Bottom" Click="logout"/>
+        <TextBlock Name="name" FontSize="30" HorizontalAlignment="Left" Height="50" Margin="34,47,0,0" TextWrapping="Wrap" Text="Welcome," VerticalAlignment="Top" Width="688"/>
+        <Button Content="Create Admin Account" Margin="325,165,325,0" Height="40" VerticalAlignment="Top" Click="AdminRegister"/>
+        <Button Content="My Account" Margin="325,225,325,0" Height="40" VerticalAlignment="Top" Click="AccountButton"/>
+        <TextBlock Name="TotalMoney" FontSize="30" HorizontalAlignment="Left" Height="50" Margin="32,336,0,0" TextWrapping="Wrap" Text="Total Money: " VerticalAlignment="Top" Width="522"/>
+        <DataGrid Name="Customers" HorizontalAlignment="Left" Height="298" Margin="517,18,0,0" VerticalAlignment="Top" Width="237" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Username}" Header="Username" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Balance}" Header="Balance" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

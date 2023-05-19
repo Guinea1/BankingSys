@@ -1,0 +1,17 @@
+﻿<Page x:Class="BankingSys.Withdraw"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BankingSys"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Withdraw">
+
+    <Grid>
+        <TextBlock FontSize="30" HorizontalAlignment="Center" Height="50" Margin="0,93,0,0" TextWrapping="Wrap" Text="Withdraw" VerticalAlignment="Top" Width="128"/>
+        <TextBox Name="Amount" FontSize="20" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top" Width="236" Height="34" GotFocus="AmtFocus" Margin="0,191,0,0"/>
+        <Button Content="Withdraw" Margin="325,272,325,0" Height="40" VerticalAlignment="Top" Click="WithdrawButton"/>
+        <Button Content="Back" Margin="25,21,675,0" Height="26" VerticalAlignment="Top" Click="BackButton"/>
+    </Grid>
+</Page>
