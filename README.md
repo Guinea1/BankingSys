@@ -1,6 +1,8 @@
 # BankingSys
 A mock banking system C# WPF app (college project)
 
+![Screenshot](screenshot.png)
+
 **Demo Login:**\
 **User: user and user**\
 **Admin: admin and admin**
